@@ -1,0 +1,9 @@
+@use "../vars";
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  &__img {
+    object-fit: cover;
+  }
+}

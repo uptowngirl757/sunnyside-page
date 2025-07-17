@@ -1,0 +1,43 @@
+@use "../vars";
+.footer {
+  color: var(--Green-800);
+  background-color: hwb(167 58% 17%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.5rem 2rem;
+  &__logo {
+    font-size: 2rem;
+    font-family: var(--font-primary);
+    font-weight: 800;
+  }
+  &__links {
+    display: flex;
+    gap: 3rem;
+  }
+  &__link {
+    color: var(--Green-800);
+    font-weight: 500;
+    transition: color 300ms ease;
+
+    &:hover {
+      color: var(--White);
+    }
+  }
+  &__socials {
+    display: flex;
+    gap: 3rem;
+    margin-block-start: 2.5rem;
+  }
+  &__social {
+    width: 25px;
+    cursor: pointer;
+    transition: filter, transform 300ms ease;
+    &:hover {
+      filter: brightness(0) invert(1);
+      transform: translateY(-3px);
+    }
+  }
+}

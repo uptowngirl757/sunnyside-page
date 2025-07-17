@@ -1,0 +1,49 @@
+@use "../vars";
+.testimonials {
+  margin-block: 7rem 5rem;
+  padding-inline: 2rem;
+  &__container {
+    display: flex;
+    gap: 1.7rem;
+    align-items: center;
+    justify-content: center;
+    @include vars.respond(mxl) {
+      flex-direction: column;
+    }
+  }
+  &__title {
+    color: var(--Grey-600);
+    text-align: center;
+    margin-block-end: 5rem;
+
+    text-transform: uppercase;
+  }
+}
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+  align-items: center;
+  justify-content: center;
+  &__avatar {
+    border-radius: 50%;
+    height: 70px;
+    margin-inline: auto;
+  }
+  &__quote {
+    text-align: center;
+    max-width: 400px;
+    font-weight: 500;
+    color: var(--Grey-600);
+  }
+  &__author {
+    text-align: center;
+  }
+  &__author-role {
+    color: var(--Grey-550);
+    font-size: 0.8rem;
+  }
+  @include vars.respond(mxl) {
+    margin-block-end: 3rem;
+  }
+}

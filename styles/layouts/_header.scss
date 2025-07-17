@@ -1,0 +1,50 @@
+@use "../vars";
+
+.hero {
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-size: cover;
+  // background-repeat: no-repeat;
+  background-position: center center;
+  min-height: 80vh;
+  // background-position: 75% 80%; /* Move the focal point */
+
+  // ask on discord how to keep the citrus centered
+
+  &__title {
+    text-align: center;
+    color: var(--White);
+    font-size: 3.4rem;
+    font-weight: 800;
+  }
+  &__img {
+    margin-inline: auto;
+    margin-block-start: 3rem;
+  }
+  @include vars.respond(xl) {
+    // background-size: contain;
+    background-position: 100% 100%;
+  }
+}
+.nav {
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+    gap: 1.9rem;
+  }
+  &__logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--White);
+  }
+  &__link {
+    color: var(--White);
+    // padding-inline-end: 1.5rem;
+    font-weight: 600;
+  }
+}
+.hamburger {
+  display: none;
+}
