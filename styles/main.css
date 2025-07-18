@@ -114,7 +114,7 @@ select {
 }
 
 .hero {
-  background-image: url("../../images/desktop/image-header.jpg");
+  background-image: url("/images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
@@ -209,10 +209,10 @@ select {
   padding-inline: 2rem;
 }
 .feature__text-content--third {
-  background-image: url("../../images/desktop/image-graphic-design.jpg");
+  background-image: url("/images/desktop/image-graphic-design.jpg");
 }
 .feature__text-content--fourth {
-  background-image: url("../../images/desktop/image-photography.jpg");
+  background-image: url("/images/desktop/image-photography.jpg");
 }
 .feature__text-content--other {
   background-size: cover;
