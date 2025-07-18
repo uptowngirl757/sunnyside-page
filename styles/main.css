@@ -118,6 +118,7 @@ select {
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
+  background-position: 75% 80%; /* Move the focal point */
 }
 .hero__title {
   text-align: center;
