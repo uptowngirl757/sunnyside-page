@@ -114,7 +114,7 @@ select {
 }
 
 .hero {
-  background-image: url("/images/desktop/image-header.jpg");
+  background-image: url("/sunnyside-page/images/desktop/image-header.jpg");
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
@@ -166,7 +166,7 @@ select {
 }
 .gallery__img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .feature {
@@ -177,11 +177,13 @@ select {
     flex-wrap: wrap;
   }
 }
-.feature__text-content, .feature__img-content {
+.feature__text-content,
+.feature__img-content {
   flex-basis: 50%;
 }
 @media (max-width: 600px) {
-  .feature__text-content, .feature__img-content {
+  .feature__text-content,
+  .feature__img-content {
     flex-basis: 100%;
   }
 }
@@ -189,7 +191,7 @@ select {
   width: 100%;
   min-height: 600px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .feature__img {
@@ -223,12 +225,14 @@ select {
   min-height: 600px;
   position: relative;
 }
-.feature__description, .feature__title {
+.feature__description,
+.feature__title {
   width: 100%;
   max-width: 500px;
   text-align: left;
 }
-.feature__description--other, .feature__title--other {
+.feature__description--other,
+.feature__title--other {
   text-align: center;
   position: absolute;
 }
@@ -387,4 +391,4 @@ select {
   .testimonial {
     margin-block-end: 3rem;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
